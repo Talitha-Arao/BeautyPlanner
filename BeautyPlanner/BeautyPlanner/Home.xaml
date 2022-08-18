@@ -18,7 +18,7 @@
                 <Image x:Name="circle" Source="open.png" />
 
             </Frame>
-            <Label Text="A sua beleza em dia!"
+            <Label Text="A sua beleza em dia!!!"
                    HorizontalTextAlignment="Center" 
                    TextColor="#680b22" FontSize="20"/>
         </StackLayout>
