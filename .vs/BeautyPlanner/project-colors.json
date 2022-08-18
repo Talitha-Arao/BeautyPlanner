@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "482def92-07c4-4e40-8d6f-02af145bba2c": {
+      "ProjectGuid": "482def92-07c4-4e40-8d6f-02af145bba2c",
+      "DisplayName": "BeautyPlanner.Android",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    },
+    "11be2580-44b3-4807-a2e3-05e568453a7b": {
+      "ProjectGuid": "11be2580-44b3-4807-a2e3-05e568453a7b",
+      "DisplayName": "BeautyPlanner",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

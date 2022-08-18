@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      xmlns:pages="clr-namespace:BeautyPlanner;assembly=BeautyPlanner"   
+      x:Class="BeautyPlanner.MainShell">
+    
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="#690B22" />
+            </Style>
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+               
+    </Shell.Resources>
+
+    <Shell.FlyoutHeader>
+        <pages:HeaderView/>
+    </Shell.FlyoutHeader>
+
+    <ShellItem Route="PaginaLogin" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate pages:PaginaLogin}"/>
+    </ShellItem>
+
+
+    <TabBar>
+        <Tab Title="Home" Icon="icone_home.png">
+            <ShellContent Title="Home" ContentTemplate="{DataTemplate pages:Home}"/>
+        </Tab>
+
+        <Tab Title="Agenda" Icon="icone_agenda.png">
+            <ShellContent>
+                <pages:PaginaAgenda/>
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Serviços" Icon="icone_servico.png">
+            <ShellContent>
+                <pages:PaginaServicos/>
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Funcionários" Icon="equipe.png">
+            <ShellContent>
+                <pages:PaginaFuncionarios/>
+            </ShellContent>
+        </Tab>
+                   
+    </TabBar>
+
+ 
+   
+    <FlyoutItem Title="Home" Icon="icone_home.png">
+
+        <ShellContent Title="Home" Icon="icone_home.png" ContentTemplate="{DataTemplate pages:Home}" Route="Home"/>
+        
+       
+
+    </FlyoutItem>
+    <FlyoutItem Title="Agenda" Icon="icone_agenda.png">
+
+        <Tab Title="Agenda" Icon="icone_agenda.png">
+            <ShellContent>
+                <pages:PaginaAgenda/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Home" Icon="icone_home.png">
+            <ShellContent Title="Home" ContentTemplate="{DataTemplate pages:Home}"/>
+        </Tab>
+        <Tab Title="Serviços" Icon="icone_servico.png">
+            <ShellContent>
+                <pages:PaginaServicos/>
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Funcionários" Icon="equipe.png">
+            <ShellContent>
+                <pages:PaginaFuncionarios/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Serviços" Icon="icone_servico.png">
+
+        <Tab Title="Serviços" Icon="icone_servico.png">
+            <ShellContent>
+                <pages:PaginaServicos/>
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Home" Icon="icone_home.png">
+
+            <ShellContent>
+                <pages:Home/>
+            </ShellContent> 
+        </Tab>
+        
+        <Tab Title="Agenda" Icon="icone_agenda.png">
+            <ShellContent>
+                <pages:PaginaAgenda/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Funcionários" Icon="equipe.png">
+            <ShellContent>
+                <pages:PaginaFuncionarios/>
+            </ShellContent>
+        </Tab>
+       
+    </FlyoutItem>
+
+    <FlyoutItem Title="Funcionários" Icon="equipe.png">
+        <Tab Title="Funcionários" Icon="equipe.png">
+            <ShellContent>
+                <pages:PaginaFuncionarios/>
+            </ShellContent>
+        </Tab>
+       
+        <Tab Title="Home" Icon="icone_home.png">
+            <ShellContent Title="Home" ContentTemplate="{DataTemplate pages:Home}"/>
+        </Tab>
+
+        <Tab Title="Agenda" Icon="icone_agenda.png">
+            <ShellContent>
+                <pages:PaginaAgenda/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Serviços" Icon="icone_servico.png">
+            <ShellContent>
+                <pages:PaginaServicos/>
+            </ShellContent>
+        </Tab>
+
+    </FlyoutItem>
+    
+  <!-- Logout --> 
+    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" IconImageSource="icone_logout.png" Clicked="OnMenuItemClicked">
+    </MenuItem>
+
+</Shell>
